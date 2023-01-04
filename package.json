@@ -1,0 +1,26 @@
+{
+    "name": "testme",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server",
+        "dev": "nodemon"
+    },
+    "author": "Nikola Markovic",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.1.0",
+        "body-parser": "^1.20.1",
+        "express": "^4.18.2",
+        "express-graphql": "^0.12.0",
+        "graphql": "^16.6.0",
+        "jsonwebtoken": "^9.0.0",
+        "mongoose": "^6.8.2",
+        "nodemailer": "^6.8.0"
+    },
+    "devDependencies": {
+        "nodemon": "*"
+    }
+}
