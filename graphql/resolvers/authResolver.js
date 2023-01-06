@@ -112,7 +112,6 @@ module.exports = {
                 msg: "Success",
             };
         } catch (err) {
-            console.log(err);
             return {
                 msg: "Server error!",
             };
@@ -139,11 +138,7 @@ module.exports = {
 
         return await new Promise((resolve, reject) => {
             transporter.sendMail(mailOptions, (err, res) => {
-                if (err) {
-                    reject("Fail");
-                } else {
-                    resolve("Success");
-                }
+                resolve(err ? "Fail" : "Success");
             });
         });
     },
